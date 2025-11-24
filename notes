@@ -1,0 +1,14 @@
+
+// Run and observe 
+// event loop  sequence 
+// console.log('1,start of script ');
+// Promise.resolve().then()=>console.log 
+// Installing Packages npm install 
+// node-BroadcastChannel
+// -save-exact 
+// -force 
+// node_modules 
+// nodemon 
+// const PORT =3002;
+
+
