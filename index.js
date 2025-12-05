@@ -1,9 +1,14 @@
-const { addtoCart } = require("./cartModule");
-
-console.log("Welcome to js ");
-console.log(10 + 40);
-let l = [10, 20, 30, 40, 50];
-l.forEach((value, index) => {
-  console.log(value.index);
+let express = require("express");
+let app = express();
+app.use(express.json());
+app.get("/student.read", (req, res) => {
+  res.send("student view api  from Express");
 });
-console.log(addtoCart());
+app.post("/student.insert", (req, res) => {
+   let myDB =await dbConnection();
+   let studentCollection = myDB.collection("student")
+  res.send("student insert api from Express");
+});
+app.listen(3000, () => {
+  console.log("server started on port 3000");
+});
